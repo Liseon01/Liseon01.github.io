@@ -1,40 +1,98 @@
 body {
     font-family: Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    text-align: center;
+    background-color: #f4f4f9;
 }
 
 header {
-    background: #0077ff;
-    color: white;
-    padding: 20px;
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
+header nav {
+    margin-top: 0.5rem;
 }
 
-nav ul li a {
-    color: white;
+header nav a {
+    color: #fff;
     text-decoration: none;
-    font-weight: bold;
+    margin: 0 1rem;
+    font-size: 1rem;
+}
+
+header nav a:hover {
+    text-decoration: underline;
 }
 
 main {
-    padding: 20px;
+    max-width: 800px;
+    margin: 2rem auto;
+    background: #fff;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
-footer {
-    background: #333;
-    color: white;
-    padding: 10px;
-    margin-top: 20px;
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 2rem;
+    object-fit: cover;
+}
+
+.details h2 {
+    margin: 0;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.details p {
+    margin: 0.5rem 0;
+    color: #555;
+}
+
+.details .links a {
+    display: inline-block;
+    margin-right: 1rem;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.details .links a:hover {
+    text-decoration: underline;
+}
+
+.bio p {
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+.bio .calendar-link {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.bio .calendar-link:hover {
+    background: #0056b3;
 }

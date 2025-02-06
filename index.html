@@ -1,36 +1,51 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Pages Blog</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Seokyoung Lee Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <header>
-        <h1>My GitHub Blog</h1>
+        <h1>Seokyoung Lee</h1>
         <nav>
-            <ul>
-                <li><a href="index.html">홈</a></li>
-                <li><a href="about.html">소개</a></li>
-                <li><a href="contact.html">연락처</a></li>
-            </ul>
+            <a href="#">Publications</a>
+            <a href="#">Code</a>
+            <a href="#">CV</a>
+            <a href="#">Teaching</a>
         </nav>
     </header>
-    
     <main>
-        <h2>최근 블로그 글</h2>
-        <ul>
-            <li><a href="posts/post1.html">첫 번째 글</a></li>
-            <li><a href="posts/post2.html">두 번째 글</a></li>
-            <li><a href="posts/post3.html">세 번째 글</a></li>
-        </ul>
+        <section class="profile">
+            <img src="profile.jpg" alt="Seokyoung Lee">
+            <div class="details">
+                <h2>Seokyoung Lee</h2>
+                <p>Assistant Professor</p>
+                <p>School of Computer and Information Engineering</p>
+                <p><strong>Kwangwoon University</strong></p>
+                <div class="links">
+                    <a href="#">Email</a>
+                    <a href="#">Google Scholar</a>
+                    <a href="#">ORCID</a>
+                    <a href="#">Github</a>
+                </div>
+            </div>
+        </section>
+        <section class="bio">
+            <p>
+                I’m an Assistant Professor in the School of Computer and Information Engineering at Kwangwoon University.
+                I received my B.S. in Mathematics and Computer Science from Sungkyunkwan University. I also received my Ph.D.
+                in the Information Security Group (ISG) at Sungkyunkwan University, where I was advised by Prof. Dongho Won
+                and Prof. Hyoungshick Kim. My research interests include Cyber Security, Machine Learning, and User Authentication.
+            </p>
+            <p>
+                In our <a href="#">research group</a>, we are always looking for excellent undergraduate and graduate students.
+            </p>
+            <p><em>I want to help many people around the world through research.</em></p>
+            <a href="#" class="calendar-link">Calendar</a>
+        </section>
     </main>
-
-    <footer>
-        <p>© 2025 My Blog. All rights reserved.</p>
-    </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
