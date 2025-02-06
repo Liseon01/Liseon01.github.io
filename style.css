@@ -10,7 +10,14 @@ header {
     background: #fff;
     border-bottom: 1px solid #ddd;
     padding: 1rem 0;
-    text-align: center;
+}
+
+.header-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+    padding-left: 2rem;
 }
 
 header h1 {
@@ -19,14 +26,9 @@ header h1 {
     color: #333;
 }
 
-header nav {
-    margin-top: 0.5rem;
-}
-
 header nav a {
     color: #007BFF;
     text-decoration: none;
-    margin: 0 1rem;
     font-size: 1rem;
 }
 
@@ -35,26 +37,32 @@ header nav a:hover {
 }
 
 main {
-    max-width: 900px;
+    display: flex; /* 프로필과 바이오를 각각 독립적으로 배치 */
+    justify-content: flex-start; /* 왼쪽 정렬 */
+    align-items: stretch; /* 두 박스의 높이를 동일하게 설정 */
+    max-width: 1000px;
     margin: 2rem auto;
-    background: #fff;
-    padding: 2rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    gap: 2rem; /* 프로필과 바이오 사이 간격 */
 }
 
 .profile {
-    display: flex;
-    align-items: center;
-    margin-bottom: 2rem;
+    text-align: left;
+    max-width: 300px;
+    background: #fff; /* 박스 배경 추가 */
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex; /* 컨텐츠를 가운데 정렬 */
+    flex-direction: column;
+    justify-content: space-between; /* 내용의 위아래 균등 배치 */
 }
 
 .profile img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    margin-right: 2rem;
     object-fit: cover;
+    margin-bottom: 1rem;
 }
 
 .details h2 {
@@ -68,6 +76,10 @@ main {
     color: #555;
 }
 
+.details .links {
+    margin-top: auto; /* 아래쪽으로 정렬 */
+}
+
 .details .links a {
     display: inline-block;
     margin: 0.5rem 1rem;
@@ -79,22 +91,29 @@ main {
     text-decoration: underline;
 }
 
+.bio {
+    background: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-grow: 1; /* 남은 공간 채우기 */
+    max-width: 600px;
+    text-align: left;
+    display: flex;
+    flex-direction: column; /* 텍스트 위에서 아래로 정렬 */
+    justify-content: center; /* 내용 수직 가운데 정렬 */
+}
+
 .bio p {
     margin-bottom: 1rem;
     color: #555;
-    text-align: left;
 }
 
-.bio .calendar-link {
-    display: inline-block;
-    margin-top: 1rem;
-    padding: 0.5rem 1rem;
-    background: #007BFF;
-    color: #fff;
+.bio a {
+    color: #007BFF;
     text-decoration: none;
-    border-radius: 5px;
 }
 
-.bio .calendar-link:hover {
-    background: #0056b3;
+.bio a:hover {
+    text-decoration: underline;
 }
